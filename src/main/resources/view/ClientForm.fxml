@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="400.0" style="-fx-background-color: F9A626;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ClientFormController">
+   <children>
+      <ScrollPane layoutX="-2.0" layoutY="65.0" prefHeight="525.0" prefWidth="400.0">
+         <content>
+            <VBox fx:id="msgVbox" prefHeight="491.0" prefWidth="384.0" />
+         </content>
+      </ScrollPane>
+      <Pane layoutX="-2.0" prefHeight="65.0" prefWidth="400.0">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="13.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-user-50.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblClientName" layoutX="65.0" layoutY="19.0" prefHeight="25.0" prefWidth="115.0" text="client name" textFill="#28608f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="28.0" fitWidth="34.0" layoutX="271.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-call-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="34.0" layoutX="321.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-video-call-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="34.0" layoutX="364.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-three-dots-48.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField layoutX="11.0" layoutY="601.0" prefHeight="38.0" prefWidth="331.0" style="-fx-background-radius: 30; -fx-background-color: white;">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </TextField>
+      <ImageView fx:id="btnSend" fitHeight="36.0" fitWidth="40.0" layoutX="356.0" layoutY="601.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-send-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="34.0" layoutX="20.0" layoutY="606.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-smile-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="41.0" layoutX="302.0" layoutY="606.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-camera-30.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtMessage" layoutX="48.0" layoutY="601.0" onAction="#txtMessageOnAction" prefHeight="38.0" prefWidth="248.0" style="-fx-background-radius: 30; -fx-background-color: white;">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </TextField>
+   </children>
+</AnchorPane>
