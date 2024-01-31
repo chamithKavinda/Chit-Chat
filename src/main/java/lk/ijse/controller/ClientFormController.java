@@ -103,8 +103,6 @@ public class ClientFormController {
             String name = msg[0];
             String msgFromServer = msg[1];
 
-            System.out.println(name);
-            System.out.println(msgFromServer);
             HBox hBoxName = new HBox();
             hBoxName.setAlignment(Pos.CENTER_LEFT);
             Text textName = new Text(name);
@@ -336,5 +334,6 @@ public class ClientFormController {
     public void shutdown() {
         ServerFormController.receiveMessage(clientName+ "left");
     }
+
 
 }
