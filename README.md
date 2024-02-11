@@ -2,6 +2,7 @@
 🚀 Network Programming module final project "Chit-Chat Live Chat Room" a Group Chat Application using Socket programming , Java , JavaFX and Multi Threading. 🚀
 
 💥 Key Features :
+
 * Real-time Communication
 * Image sharing
 * Expressive Interaction
